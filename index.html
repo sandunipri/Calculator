@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .calculator {
+        width: 700px;
+        height: 500px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .container {
+        width: 100%;
+        height: calc(100% - 100px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .box {
+        color: black;
+        background-color: aqua;
+        border: none;
+        font-size: 20px;
+        border-radius: 1.5rem;
+      }
+      .input {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .cancel {
+        width: 25%;
+        height: 80px;
+        border-radius: 1.5rem;
+        border: none;
+        outline: none;
+        background-color: aqua;
+        font-size: 20px;
+      }
+
+      input {
+        width: calc(80% - 80px);
+        height: calc(100% - 20px);
+        border-radius: 1.5rem;
+        text-align: right;
+        padding: 10px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input">
+        <button id="AC" class="cancel">AC</button>
+        <!-- <label for="Text"></label> -->
+        <input type="text" id="Num" placeholder="Inputnumber" />
+      </div>
+      <div class="container">
+        <button id="7" class="box">7</button>
+        <button id="8" class="box">8</button>
+        <button id="9" class="box">9</button>
+        <button id="sum" class="box">+</button>
+        <button id="4" class="box">4</button>
+        <button id="5" class="box">5</button>
+        <button id="6" class="box">6</button>
+        <button id="sub" class="box">-</button>
+        <button id="1" class="box">1</button>
+        <button id="2" class="box">2</button>
+        <button id="3" class="box">3</button>
+        <button id="div" class="box">/</button>
+        <button id="zero" class="box">0</button>
+        <button id="point" class="box">.</button>
+        <button id="equal" class="box">=</button>
+        <button id="mul" class="box">*</button>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
